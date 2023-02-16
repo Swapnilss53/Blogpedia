@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
 const PASSWORD = process.env.PASSWORD;
-console.log(PASSWORD);
 
 const homeStartingContent = "Hello User, you can create blog edit them and read them";
 const aboutContent = "I am swapnil shinde, studying in last year of Elctrical Engineering, at MET Institute of Engineering Nashik.I do have a strong interest in Computer Science.";
@@ -18,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 const address = "mongodb+srv://Swapnil53:"+ PASSWORD + "@cluster0.njsx7pm.mongodb.net/?retryWrites=true&w=majority";
-console.log(address);
+
 mongoose.connect(address);
 
 const postSchema = {
