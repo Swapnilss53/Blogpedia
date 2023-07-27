@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-const address = "mongodb+srv://Swapnil53:"+ PASSWORD + "@cluster0.njsx7pm.mongodb.net/?retryWrites=true&w=majority";
+const address = "mongodb+srv://Admin-Swapnil:Swapnil%4053@cluster0.cw1t1to.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(address);
 
