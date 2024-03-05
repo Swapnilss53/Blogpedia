@@ -15,5 +15,17 @@
 
     <% }) %>
 
+    <div class="floating-container">
+      <a href="" class="floating-button">Compose Blog</a>
+    </div>
+
+    <script>
+        document.getElementById('compose-button').addEventListener('click', function() {
+        window.location.href = '/compose';
+      });
+
+
+    </script>
+
 
 <%- include("partials/footer"); -%>
