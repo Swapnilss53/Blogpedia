@@ -40,6 +40,12 @@
   position: relative;
 }
 
+.floating-container {
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+}
+
 .floating-button {
   display: inline-block;
   background-color: #007bff;
@@ -50,17 +56,13 @@
   font-weight: bold;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
-  bottom: calc(3cm + 20px);
+  bottom: 20px;
   right: 20px;
-  z-index: 9999; /* Adjust this value as needed */
+  z-index: 9999; /* High z-index to ensure it's above other items */
 }
 
 .floating-button:hover {
   background-color: #0056b3;
 }
 
-  
-  .floating-button:hover {
-    background-color: #0056b3;
-  }
 
